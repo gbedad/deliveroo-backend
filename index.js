@@ -4,11 +4,8 @@ const cors = require("cors");
 const app = express();
 app.use(cors());
 
-const deliveroo = require("./deliveroo.json");
-
 // CREATION DE LA ROUTE GET******
 app.get("/", (req, res) => {
-  return;
   res.json({
     restaurant: {
       path: "Le Pain Quotidien",
@@ -456,5 +453,5 @@ app.get("/", (req, res) => {
 });
 
 app.listen(process.env.PORT || 3200, () => {
-  console.log("Server started on PORT: ", procees.env.PORT);
+  console.log("Server started on PORT: ");
 });
